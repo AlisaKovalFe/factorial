@@ -30,6 +30,7 @@ console.log(factIterat(5));
 
 // Рекурсивный расчет факториала
 function factRec(num) {
+    //здесь базовый случай num == 0
     return num < 0 || num % 1 !== 0 || (num === 0 && (1 / num) === -Infinity) ? 'не посчитаю значение факториала' : (num ? num * factRec(num - 1) : 1)
 
     //здесь обратная логика в последней скобке
